@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Fluent QA Revisited # Website name
-baseURL: 'https://qdriven.github.io/fluentqa-revisted' # Website URL
+baseURL: 'https://qdriven.github.io/qa-revistied-slides' # Website URL
 
 ############################
 ## LANGUAGE
