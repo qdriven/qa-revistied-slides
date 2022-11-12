@@ -20,6 +20,8 @@ jobs:
         with:
           hugo-version: 'latest'
           # extended: true
+      - name: check dep
+        run: hugo mod graph
 
       - name: Build
         run: hugo --minify
