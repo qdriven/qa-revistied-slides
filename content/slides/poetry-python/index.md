@@ -27,10 +27,6 @@ Poetry - python的虚拟环境,依赖管理和打包工具
   - 第三方依赖安装，卸载，版本管理
   - 使用本地/github/gitlab仓库代码作为第三方依赖
 - Poetry 常用命令
-  - init
-  - install
-  - run
-  - update
 ---
 
 ## Poetry 介绍 -2
