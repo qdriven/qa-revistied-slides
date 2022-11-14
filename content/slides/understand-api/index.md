@@ -2,9 +2,9 @@
 title:  Understand API Development
 summary: An introduction For QA to understand API Development.
 authors: [FluentQA]
-tags: ['QA-Revisited']
-categories: [QA-Revisited]
-date: '2022-10-06'
+tags: [intro,api]
+categories: [intro,api]
+date: '2022-11-14'
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
   theme: black
@@ -13,66 +13,94 @@ slides:
   highlight_style: dracula
 ---
 
-# Understand API Development
+# Morden frontend-backend system
 
-A few demoes to understand the API Development.
+Morden Frontend-Backend system intro for QA.
 
 ---
 
 ## Agenda
 
-- Web Development and API Usage
-- API Lifecycle
-- Build A Simple API 
-- More APIs and more components involved
-- Micro Service and API
+- What's Frontend
+- What's Backend
+- How Frontend and Backend interact
+  
+---
+
+## Frontend - UI Layer
+
+What's Frontend doing: 
+- Looks:
+  - Layout/UI Component
+  - Style: CSS
+- UI Operation design: 
+  - Interaction design/user friendly
+  - How to compose different component in a user friendly manner
+- Bridge of User input and Server data
+  - Retrieving data from server to give user information
+  - Sending user input to server from computing
+- Frontend means interact with user directly
+  
+---
+
+## Backend
+
+What's Backend Doing:
+- Feed Data
+- Computing income data, keeping data updated
 
 ---
 
-## Web Development and API Usage -1
+## How Frontend and Backend interact
 
-Static Web:
-- yahoo
-- sina
+1. User requests data from backend through Frontend(client side)
+2. Frontend to design UI workflow to build request data input
+3. Backend receive request to compute and return the result
+4. To simplify, frontend build request dat to send to backend, backend compute these data to keep data updated and return the result to user.
+---
 
-static file and html markup with server
+## How Frontend and Backend interact
+
+![img](direct-client-to-service-communication.png)
+
+But sometimes it is really hard/boring to build request data, so use UI to 
+let user input data step by step. The UI is fancy, and User is happy.
 
 ---
 
-## Web Development and API Usage -2
+## Frontend UI VS Postman API
 
-More Dynamic Web:
+In Data Perspective, they are doing the same thing but with UI, it is more easy to use
 
-- Ajax
-- API 
+- UI Login 
+![](login-ui.png)
+
+- Send API Login in POSTMAN
+![](login-postman.png)
+---
+
+## API: A Contract between Frontend and Backend
+
+- API:  Contracts/Functions define the input and output
+- Data Interaction based on API
+- So API Definition first? Why, to decouple the dependency between frontend and backend
 
 ---
 
-## Web Development and API Usage -3
+## API: Design
 
-More Clients,More APIs and More Data:
-- App/Web/Micro-App
-- More APIs and Micro Service
-- API as Data Provider
-- API as interface/protocol to connect everything
+![](api-design.png)
 
----
+## API: Code-Generation Based on API Design
 
-## API in a simple Modern app
-
-To Do List App:
-
-- How to interactive with API 
-- UI and API 
+ToDo API example: Springboot project
+```sh
+openapi-generator-cli generate -i 1-definition/openapi3-todo.yaml -g spring  --skip-validate-spec  -o todo-java
+```
 
 ---
 
-## API Lifecycle
+## Do you implementation
 
-- API definition
-- API implementation
-
---- 
-
-## API Development
-
+- Frontend
+- Backend
