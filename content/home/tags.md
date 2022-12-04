@@ -10,7 +10,7 @@ headless: true
 weight: 10
 
 title: FluentQA Revisited Decks 👩🏼‍🏫
-subtitle: Examples to demo How to Build QA Toolkits
+subtitle: 5-30 minutes tutorials for QA Revisited
 
 content:
   # Choose the taxonomy from `config.yaml` to display (e.g. tags, categories)
@@ -26,4 +26,4 @@ design:
     padding: ['2rem', 0, '2rem', 0]
 ---
 
-Check out my recent decks below or choose a topic to explore ✨
+关于测试工作的一些总结，尽量简洁实用. 不重理念，重实际可操作性和效率.

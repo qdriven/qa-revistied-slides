@@ -2,9 +2,9 @@
 title:  Understand API Development
 summary: An introduction For QA to understand API Development.
 authors: [FluentQA]
-tags: [intro,api]
-categories: [intro,api]
-date: '2022-11-14'
+tags: [APITesting-Revisited]
+categories: [QA-Revisited,API]
+date: '2022-10-14'
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
   theme: black
