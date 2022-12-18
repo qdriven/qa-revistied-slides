@@ -2,18 +2,18 @@
 title:  Poetry - Python依赖管理工具
 summary: An introduction For QA to understand Poetry.
 authors: [FluentQA]
-tags: ['QA-Python-Revisited']
-categories: ['QA-Revisited','Python']
+tags: ['QAPython-Revisited']
+categories: ['QAPython-Revisited']
 date: '2022-11-30'
 slides:
   # Choose a theme from https://github.com/hakimel/reveal.js#theming
-  theme: black
+  theme: simple
   # Choose a code highlighting style (see Hugo docs on Chroma)
   #   Light style: github-light. Dark style: dracula (default).
   highlight_style: github-light
 ---
 
-# Poetry- Python 打包和依赖管理工具
+##  Poetry-Python 打包和依赖管理工具
 
 --- 
 
@@ -92,7 +92,7 @@ poetry shell
 ## Poetry 常用命令
 
 - poetry add : 添加依赖
-- poetry install: 安装所有poetry.toml 文件声明的依赖
+- poetry install: 安装你的代码-pip install
 - poetry update: 更新所有依赖
 - poetry run: 运行命令
 - poetry build: 打包
