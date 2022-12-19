@@ -17,9 +17,22 @@ slides:
 
 --- 
 
+## 原则
+
+> 内容哪里来：
+  - 内容基本都来官方文档和自己的实践总结
+  - 介绍的东西确实好用和实用
+
+> 能带来什么:
+  - 给您带来的: 花最少的时间掌握最常用的东西
+  - 性价比高：学习成本不高 VS 收获不少
+--- 
+
 ## Poetry是什么
 
 ![](poetry.png)
+
+- https://python-poetry.org/
 
 ---
 
@@ -110,7 +123,35 @@ poetry shell
   * go: go.mod
 ---
 
-## Poetry使用Cheatsheet
+## Poetry 依赖管理 -- git 仓库管理
+
+- 依赖可以是git仓库，本地文件
+
+```toml
+[tool.poetry.dependencies]
+# Get the latest revision on the branch named "next"
+requests = { git = "https://github.com/kennethreitz/requests.git", branch = "next" }
+```
+---
+
+## Poetry 依赖管理 -- 从git安装
+
+```sh
+poetry add "https://github.com/myorg/mypackage_with_subdirs.git#subdirectory=subdir"
+```
+
+--- 
+
+## Poetry  依赖管理 - 本地文件
+
+```sh
+[tool.poetry.dependencies]
+# directory
+my-package = { path = "../my-package/", develop = false }
+
+# file
+my-package = { path = "../my-package/dist/my-package-0.1.0.tar.gz" }
+```
 
 ---
 
