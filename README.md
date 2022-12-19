@@ -2,8 +2,8 @@
 
 
 ## Morden Python
-- [dependencies and package](content/slides/poetry-python/index.md)
-
+- [poetry python dependencies and package](content/slides/poetry-python/index.md)
+- 
 
 ## QA Process
 
