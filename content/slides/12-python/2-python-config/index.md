@@ -44,22 +44,6 @@ slides:
 
 ---
 
-### dynaconf 优势 - 开箱即用
-
-初始化，自动读取settings.toml配置信息
-
-```python
-
-```qSettings = Dynaconf(
-    settings_files=["settings.toml", ".secrets.toml"],
-    environments=True,
-    load_dotenv=True,
-)
-qSettings.validators.validate()
-print("settings is loaded")
-```
---- 
-
 ### dynaconf- 配置文件
 配置文件settings.toml
 ```toml
@@ -78,25 +62,47 @@ name = "admin"
 
 --- 
 
+### dynaconf使用 - 开箱即用
+
+初始化:自动读取settings.toml配置信息
+
+```python
+
+qSettings = Dynaconf(
+    settings_files=["settings.toml", ".secrets.toml"],
+    environments=True,
+    load_dotenv=True,
+)
+qSettings.validators.validate()
+print("settings is loaded")
+```
+--- 
 ### dynaconf优势 - 使用直接
-常用方法：
+如何从上面的settings文件中获取值:
+```python
+# 直接读取
+def test_config_default_value(): 
+    assert qSettings.DB_NAME == "mydb.db"
+```
 1. settings.<属性名> 可以直接获取
 2. 支持嵌套属性: ```settings.a_dict.hello```
 4. 支持多个环境不同配置,development/test/production
 ---
 
-### dynaconf优势 - 使用直接
-```python
-# 直接读取
-def test_config_default_value(): 
-    assert qSettings.DB_NAME == "mydb.db"
+### dynaconf优势 - 嵌套值
 
-# 内嵌
+从上面的settings文件中获取嵌套值: ```settings.a_dict.hello```
+```python
 def test_config_default_nested_value():
     print(qSettings.a_dict)
     assert qSettings.a_dict.hello == "world"
+```
 
+### dynaconf优势 - 不同环境的值
 
+不同环境的值:name, 通过.env文件配置
+
+```
 def test_config_environment_setting():
     assert qSettings.name == "developer"
 ```
@@ -108,3 +114,6 @@ def test_config_environment_setting():
 - 开箱即用，基本功能实用
 - 不需要二次开发或者适配
 
+### dynaconf 可以学习的依赖库
+
+- Box: https://box.readthedocs.io/
