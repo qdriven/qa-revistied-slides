@@ -13,9 +13,8 @@ slides:
   highlight_style: dracula
 ---
 
-## Python Configuration 
+## python开箱即用配置管理-dynaconf
 
-开箱即用
 
 > dynaconf: Configuration Management for Python.
    
@@ -114,6 +113,11 @@ def test_config_environment_setting():
 - 开箱即用，基本功能实用
 - 不需要二次开发或者适配
 
+---
 ### dynaconf 可以学习的依赖库
 
 - Box: https://box.readthedocs.io/
+- 这个库解决了一个问题,不用```dict[key]```   这种方式取值，用 ```dict.key``` 也可以取值
+- 原理可以自己看源码，如果像要听讲可以留言
+
+---
