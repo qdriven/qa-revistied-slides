@@ -157,6 +157,8 @@ my-package = { path = "../my-package/dist/my-package-0.1.0.tar.gz" }
 
 ## Poetry 使用教程视频
 
+- [无废话]Poetry-Python 打包和依赖管理工具](https://www.bilibili.com/video/BV1Ye4y1K7yH/?vd_source=c668c05f4b5039b3290cec826cf03f14)
+
 ## Q&A
 
 - Demos

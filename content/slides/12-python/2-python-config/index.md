@@ -120,4 +120,8 @@ def test_config_environment_setting():
 - 这个库解决了一个问题,不用```dict[key]```   这种方式取值，用 ```dict.key``` 也可以取值
 - 原理可以自己看源码，如果像要听讲可以留言
 
+### dynaconf 视频说明
+- [[无废话python] PYTHON开箱即用配置管理-DYNACONF
+](https://www.bilibili.com/video/BV1WV4y1F7pU/)
+
 ---
