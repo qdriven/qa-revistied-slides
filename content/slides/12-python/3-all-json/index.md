@@ -1,7 +1,23 @@
+---
+title: One Page JSON
+summary: JSON in One Page for software QA
+authors: [FluentQA]
+tags: ['QAPython-Revisited']
+categories: ['QAPython-Revisited']
+date: '2023-08-12'
+slides:
+  # Choose a theme from https://github.com/hakimel/reveal.js#theming
+  theme: simple
+  # Choose a code highlighting style (see Hugo docs on Chroma)
+  #   Light style: github-light. Dark style: dracula (default).
+  highlight_style: github-light
+---
 # JSON in One Page for software QA
 
 给测试同学说的JSON,一页说完JSON的主要用法. 在日常测试中,JSON是目前遇到的
 最常见的数据格式，希望通过这片文章和视频，用15-30分钟把日常常用JSON相关内容讲明白,讲清楚.
+
+--- 
 
 <!-- TOC -->
 - [JSON in One Page for software QA](#json-in-one-page-for-software-qa)
