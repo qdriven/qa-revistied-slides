@@ -12,22 +12,23 @@ slides:
   #   Light style: github-light. Dark style: dracula (default).
   highlight_style: github-light
 ---
-# JSON in One Page for software QA
+## JSON in One Page for software QA
 
-给测试同学说的JSON,一页说完JSON的主要用法. 在日常测试中,JSON是目前遇到的
-最常见的数据格式，希望通过这片文章和视频，用15-30分钟把日常常用JSON相关内容讲明白,讲清楚.
+- Understand JSON in A Simple Way
+- Short Intro, 10 minutes
+- Tools used for Software Testing
 
 --- 
 
 <!-- TOC -->
 - [JSON in One Page for software QA](#json-in-one-page-for-software-qa)
-  - [什么是JSON?](#什么是json)
-  - [JSON操作 - load(s)/dump(s)](#json操作---loadsdumps)
-  - [JSON字典转换](#json字典转换)
-  - [JSON/DICT/类的转换](#jsondict类的转换)
-  - [JSON/DICT 查找更简单的办法](#jsondict-查找更简单的办法)
-  - [JSON/DICT的DIFF的办法](#jsondict的diff的办法)
-  - [References](#references)
+- [什么是JSON?](#什么是json)
+- [JSON操作 - load(s)/dump(s)](#json操作---loadsdumps)
+- [JSON字典转换](#json字典转换)
+- [JSON/DICT/类的转换](#jsondict类的转换)
+- [JSON/DICT 查找更简单的办法](#jsondict-查找更简单的办法)
+- [JSON/DICT的DIFF的办法](#jsondict的diff的办法)
+- [References](#references)
 <!-- TOC -->
 
 ---
@@ -74,6 +75,9 @@ slides:
     - 时间相关
     - null/或者不显示
   - 关于json key的别名
+
+--- 
+
 - JSON/DICT/类可以统一看，相互之间都可以转换
   - 类的好处是对于IDE友好,可以自动提示类字段
   - JSON/DICT非常任意，对IDE不友好，可以非常灵活，但是对于编程效率不算高
@@ -82,6 +86,7 @@ slides:
 - 数据结构+算法=程序，JSON就是一种数据结构
 
 ---
+
 ## JSON/DICT 查找更简单的办法
 - JSON query 
 - 字典 query
