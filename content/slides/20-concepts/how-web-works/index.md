@@ -126,6 +126,8 @@ Most of the DNS servers themselves use anycast to achieve high availability and 
 * The server generates its own hash, and then decrypts the client-sent hash to verify that it matches. If it does, it sends its own Finished message to the client, also encrypted with the symmetric key.
 * From now on the TLS session transmits the application (HTTP) data encrypted with the agreed symmetric key.
 
+---
+
 ## HTTP protocol
 
 You can be pretty sure that dynamic sites such as Facebook/Gmail will not be served from the browser cache because dynamic pages expire either very quickly or immediately (expiry date set to past).
