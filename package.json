@@ -1,0 +1,20 @@
+{
+  "name": "qa-revisited-slides",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "clean": "rm -rf index.html .site present/*/index.html present/*/dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@slidev/cli": "^0.43.6",
+    "@slidev/theme-default": "^0.21.2",
+    "slidev-theme-eloc": "^1.0.2",
+    "zx": "^7.2.3"
+  }
+}
