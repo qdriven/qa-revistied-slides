@@ -5,8 +5,6 @@ title: Software QA Revisited
 
 # Software QA Revisited Slides
 
-*** Do it ***
-
 <div class="scroll">
 
 - [Build Your Test Case Management System in One Day](/present/qa-workspace/tc-mgt-one-day/)
