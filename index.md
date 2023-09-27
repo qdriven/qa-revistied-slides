@@ -7,7 +7,7 @@ title: Software QA Revisited
 
 <div class="scroll">
 
-- [Build Your Test Case Management System in One Day](/present/qa-workspace/tc-mgt-one-day/)
+- [Build Your Test Case Management System in One Day](/present/tc-mgt-one-day/)
 
 </div>
 
