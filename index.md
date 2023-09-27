@@ -7,7 +7,11 @@ title: Software QA Revisited
 
 <div class="scroll">
 
-- [Build Your Test Case Management System in One Day](/present/tc-mgt-one-day/)
+***Learning From Practise, Build you Own***: 
+- [Build Your Test Case Management System in One Day](/present/tc-mgt-one-day)
+
+***Python Revisited***:
+- [python-poetry](/present/python-poetry)
 
 </div>
 

@@ -1,36 +1,48 @@
 ---
-title:  Poetry - Python依赖管理工具
-summary: An introduction For QA to understand Poetry.
-authors: [FluentQA]
-tags: ['QAPython-Revisited']
-categories: ['QAPython-Revisited']
-date: '2022-11-30'
-slides:
-  # Choose a theme from https://github.com/hakimel/reveal.js#theming
-  theme: simple
-  # Choose a code highlighting style (see Hugo docs on Chroma)
-  #   Light style: github-light. Dark style: dracula (default).
-  highlight_style: github-light
+theme: eloc
+layout: full
 ---
 
 ##  Poetry-Python 打包和依赖管理工具
 
---- 
+<iframe
+  src="https://www.bilibili.com/video/BV1Ye4y1K7yH/?vd_source=c668c05f4b5039b3290cec826cf03f14"
+  scrolling="no"
+  border="0"
+  frameborder="no"
+  framespacing="0"
+  allowfullscreen="true"
+  class="w-full h-full"
+/>
+
+<!--
+Adblock
+
+```
+player.bilibili.com##DIV[class="bilibili-player-video-recommend"]
+player.bilibili.com##DIV[class="bilibili-player-video-pause-panel-container-mask"]
+player.bilibili.com##DIV[class="bilibili-player-video-pause-panel-container-qrcode"]
+player.bilibili.com##DIV[class="bilibili-player-video-sendjumpbar"]
+```
+-->
+
+---
 
 ## 原则
 
-> 内容哪里来：
+* ***内容哪里来***：
   - 内容基本都来官方文档和自己的实践总结
   - 介绍的东西确实好用和实用
-
-> 能带来什么:
+* ***能带来什么***:
   - 给您带来的: 花最少的时间掌握最常用的东西
   - 性价比高：学习成本不高 VS 收获不少
+
 --- 
+---
 
 ## Poetry是什么
 
-![](poetry.png)
+![](/images/poetry.png)
 
 - https://python-poetry.org/
 
@@ -64,15 +76,18 @@ slides:
 poetry new pydaily
 tree pydaily
 ```
-![](2022-12-05-01-36-51.png)
+
+![](/images/tree.png)
 
 ---
 
 ## Poetry 虚拟环境
+
 ```sh
 poetry shell
 ```
-![](2022-12-05-01-37-31.png)
+
+![](/images/poetry-shell.png)
 
 --- 
 
@@ -82,7 +97,8 @@ poetry shell
   poetry add requests
   poetry add pytest -D
   ```
-![](2022-12-05-01-38-08.png)
+
+![](/images/dep.png)
 
 --- 
 
@@ -98,7 +114,7 @@ poetry shell
 
 ## Poetry: pyporject.toml
 
-![](2022-12-05-01-39-09.png)
+![](/images/project.png)
 
 --- 
 
@@ -157,7 +173,9 @@ my-package = { path = "../my-package/dist/my-package-0.1.0.tar.gz" }
 
 ## Poetry 使用教程视频
 
-- [无废话]Poetry-Python 打包和依赖管理工具](https://www.bilibili.com/video/BV1Ye4y1K7yH/?vd_source=c668c05f4b5039b3290cec826cf03f14)
+- [无废话-Poetry-Python 打包和依赖管理工具](https://www.bilibili.com/video/BV1Ye4y1K7yH/?vd_source=c668c05f4b5039b3290cec826cf03f14)
+
+---
 
 ## Q&A
 
