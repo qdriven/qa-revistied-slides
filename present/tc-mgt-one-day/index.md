@@ -5,10 +5,17 @@ layout: full
 
 ## Build Test Case System in One day
 
-How? / Do it Now!
+Cost? Only one day, ignore it.
+
+What?/Why?/How? / Do it Now!
 
 ---
 
+## What/Why/How
+
+- What: Test Case System,manage Test case
+- Why:  Share/Compose/Import/Export/Run/Report
+- How: Java/Springboot/Erupt/Ideas
 ## Steps to Build
 
 - Setup Project
