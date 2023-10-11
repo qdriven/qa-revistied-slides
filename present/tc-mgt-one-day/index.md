@@ -7,31 +7,60 @@ layout: full
 
 Cost? Only one day, ignore it.
 
-What?/Why?/How? / Do it Now!
+What?/Why?/How? 
+***Do it Now!***
 
 ---
 
 ## What/Why/How
 
-- What: Test Case System,manage Test case
-- Why:  Share/Compose/Import/Export/Run/Report
-- How: Java/Springboot/Erupt/Ideas
-## Steps to Build
-
-- Setup Project
-- Test Case CRUD
-- Import Test Cases
-- Test Scenarios
-- Test Run
-- ......
+- What: Test Cases stored,composed,shared, and tracked
+- Why:  collobration!
 
 ---
+
+## Pain Points
+
+![](/images/painpoints.png)
+
+And Even more:
+
+- How to extract some Alice’s cases to Bob,reduce some duplicated jobs
+- How Alice and Bob to co-work with one test cases sets
+- .......
+
+---
+---
+## How?
+
+- Excel Solution could solve some, but it is hard to collaborate
+- Build A Simple IT sytem but very low cost
+- Low-Code Solution Here:
+  - JAVA/SpringBoot
+  - Erupts
+
+---
+
+## Let's Go
+
+JAVA/MAVEN/IDE
+--- 
 
 ![](/images/tc-overview.png)
 
 ---
+## Steps to Build
 
-## Metersphere Test Case Module
+- Setup Project
+- Test Case Create/Update/Delete
+- Import Test Case from Excel/mindmap files
+- Test Scenarios: Compose Test Case as Test Scenarios
+- Test Run: Compose Test Scenarios as Scope of one Test Run
+- Test Tracking: Dashboard of Test Run
+- ......
+---
+
+## Opensource Metersphere Test Case Module
 
 **[Metershere](https://cloud2.metersphere.com/#/setting/personsetting)**
 
@@ -45,8 +74,6 @@ What?/Why?/How? / Do it Now!
 
 ---
 
-
----
 
 ## 1. Setup Project
 

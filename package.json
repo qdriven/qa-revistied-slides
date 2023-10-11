@@ -12,7 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@slidev/cli": "^0.43.6",
+    "@slidev/cli": "^0.43.7",
     "@slidev/theme-default": "^0.21.2",
     "slidev-theme-eloc": "^1.0.2",
     "zx": "^7.2.3"
