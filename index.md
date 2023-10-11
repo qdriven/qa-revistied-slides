@@ -13,6 +13,10 @@ title: Software QA Revisited
 ***Python Revisited***:
 - [python-poetry](/present/python-poetry)
 
+
+***Daily tools***:
+- [Database: popsql](/present/products/database/popsql/)
+- [Database: dbvisualizer](/present/products/database/dbvisualized/)
 </div>
 
 <style>
