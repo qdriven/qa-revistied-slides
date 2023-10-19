@@ -1,0 +1,4 @@
+---
+theme: eloc
+layout: full
+---

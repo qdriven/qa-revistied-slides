@@ -1,4 +1,8 @@
-## Test Case CRUD
+## Features: Test Case CRUD
+
+Create Create/Update/Delete/Read feature for Test Case:
+
+Steps:
 
 - Define Test Case Model
 - Config Test Case Menu
@@ -17,7 +21,7 @@
 
 ## Define Test Case Model
 
-定义TestCase的模型-Model Class:
+TestCase Model Class:
 
 - JPA: Entity/Table
 - Erupt:@Erupt
@@ -126,6 +130,6 @@ DONE!
 
 ## 小结
 
-1. Model
+1. Model 
 2. Field
 3. 菜单配置

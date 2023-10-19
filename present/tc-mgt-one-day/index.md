@@ -3,10 +3,19 @@ theme: eloc
 layout: full
 ---
 
+## Test Case
+
+- What is Test Case?
+- Where to use Test Case?
+- Why Test Case is important for QA?
+
+---
+
+
+
 ## Build Test Case System in One day
 
-Cost? Only one day, ignore it.
-
+Cost: Only one day, ignore it.
 What?/Why?/How? 
 ***Do it Now!***
 

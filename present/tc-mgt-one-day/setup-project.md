@@ -16,7 +16,6 @@ How to Setup a MAVEN/Springboot/erupts project
 - 4. Database Configuration
 - 5. Packaging and Run
 
-
 ---
 
 ## 1. Choose Framework: erupts
