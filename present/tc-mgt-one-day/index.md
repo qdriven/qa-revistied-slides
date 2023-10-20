@@ -3,43 +3,34 @@ theme: eloc
 layout: full
 ---
 
-## Test Case
-
-- What is Test Case?
-- Where to use Test Case?
-- Why Test Case is important for QA?
-
----
-
-
 
 ## Build Test Case System in One day
 
 Cost: Only one day, ignore it.
 What?/Why?/How? 
+
 ***Do it Now!***
 
 ---
 
-## What/Why/How
+## 做成什么样子？
 
-- What: Test Cases stored,composed,shared, and tracked
-- Why:  collobration!
+**[Metershere](https://cloud2.metersphere.com/#/setting/personsetting)**
+
+**Test Case List**:
+
+![](/images/metersphere-tc-list.png)
+
+---
+
+## Metersphere Add test case 
+
+![](/images/ms-tc-add.png)
 
 ---
 
-## Pain Points
 
-![](/images/painpoints.png)
 
-And Even more:
-
-- How to extract some Alice’s cases to Bob,reduce some duplicated jobs
-- How Alice and Bob to co-work with one test cases sets
-- .......
-
----
----
 ## How?
 
 - Excel Solution could solve some, but it is hard to collaborate
@@ -56,8 +47,8 @@ JAVA/MAVEN/IDE
 --- 
 
 ![](/images/tc-overview.png)
-
 ---
+
 ## Steps to Build
 
 - Setup Project
@@ -67,21 +58,11 @@ JAVA/MAVEN/IDE
 - Test Run: Compose Test Scenarios as Scope of one Test Run
 - Test Tracking: Dashboard of Test Run
 - ......
----
-
-## Opensource Metersphere Test Case Module
-
-**[Metershere](https://cloud2.metersphere.com/#/setting/personsetting)**
-
-**Test Case List**:
-
-![](/images/metersphere-tc-list.png)
 
 ---
 
-![](/images/ms-tc-add.png)
 
----
+
 
 
 ## 1. Setup Project

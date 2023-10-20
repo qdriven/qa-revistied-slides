@@ -100,3 +100,21 @@
 
 ---
 
+## What/Why/How
+
+- What: Test Cases stored,composed,shared, and tracked
+- Why:  collobration!
+
+---
+
+## Pain Points
+
+![](/images/painpoints.png)
+
+---
+
+And Even more:
+
+- How to extract some Alice’s cases to Bob,reduce some duplicated jobs
+- How Alice and Bob to co-work with one test cases sets
+- .......
