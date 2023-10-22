@@ -2,41 +2,12 @@
 theme: eloc
 ---
 
-## Do it Now!
+## 一个文件启动一个系统
 
-How to Setup a MAVEN/Springboot/erupts project
-
+***一个JAVA文件运行启动一个后台管理系统***
 ---
 
-## Setup Project
-
-- 1. Choose Framework
-- 2. Setup Maven Project
-- 3. Run Application
-- 4. Database Configuration
-- 5. Packaging and Run
-
----
-
-## 1. Choose Framework: erupts
-
-**[erupts](https://www.yuque.com/erupts/erupt)**
-
-*  Almost Zero Frontend coding
-*  Backend code controll all the frontend layout and display
-*  Very easy to build a just working internal tool system by a JAVA Bean
----
-
-
-## 2.1 Setup MAVEN Project
-
-MAVEN POM file dependecies/build setting
-
----
-
-## 3. Run Application
-
-- Application Class to Ready to Run
+## ***一个JAVA文件运行启动一个后台管理系统***
 
 ```java
 import org.springframework.boot.SpringApplication;
@@ -54,7 +25,54 @@ public class QAWorkspaceApp {
 
 ---
 
-## 4. Database Configuration
+## 当然还有一些其他
+
+- 一个命令启动数据库
+- 一个命令打包/运行JAVA包
+- 权限管理内部已经集成
+
+---
+
+## 技术栈基本介绍
+
+- Low-Code Solution:
+  - JAVA/SpringBoot
+  - **[erupts](https://www.yuque.com/erupts/erupt)**
+- 优势：
+  - 低成本/快速开发
+  - 几乎不用前端代码开发,又后端JAVA基础就可以
+- JAVA/MAVEN/Springboot
+
+---
+
+
+## 验证JAVA/MAVEN安装完成
+
+```sh
+java -version
+mvn -v
+```
+
+---
+
+## Setup MAVEN Project
+
+1. 创建MAVEN项目
+2. 添加erupt/springboot相关依赖
+3. 添加数据库配置
+
+---
+
+##  数据库搭建
+
+- docker/docker-compose
+- [orbstack](https://orbstack.dev/download) 轻量级docker 客户端
+- 创建一个数据库 ```qa_workspace```
+- 运行: ```docker-compose up```
+
+---
+
+## Database Configuration
 
 ```yaml
 spring:
@@ -71,7 +89,8 @@ spring:
 
 ---
 
-## 5. Packing and Run
+
+## 5. 打包
 
 - **packing**:
 
@@ -80,18 +99,27 @@ mvn clean package -Dmaven.test.skip=true
 cp -rf server/target/*.jar .
 ```
 
-- **Running**:
+---
+
+## 运行 **Running**:
 
 ```sh
 java -jar server-1.0.SNAPSHOT.jar
 ```
 ---
 
-## 5. Summary
+## 查看接口文档
 
-- How to create a MAVEN Project?
-- How to Run a erupt/springboot application
-- How to Packaging and Run Springboot Application
+***http://localhost:9090/doc.html#/home***
+
+---
+
+## 5. 回顾
+
+- 如何创建MAVEN项目？
+- 如何设置数据库？
+- 如何运行erupt项目
+- 如何打包和运行springboot项目
 - Bonus:
-  - How to integrate API Docs
-  - Erupt Basic Configuration
+  - 如何获取API文档
+  - 如何进行添加新用户配置

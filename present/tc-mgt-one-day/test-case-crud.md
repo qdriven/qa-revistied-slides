@@ -1,15 +1,7 @@
-## Features: Test Case CRUD
+## Features: 测试用例增删改查功能
 
-Create Create/Update/Delete/Read feature for Test Case:
-
-Steps:
-
-- Define Test Case Model
-- Config Test Case Menu
-
----
-
-## The Test Case Page To Build
+- 左侧是树状结构，代表模块层级
+- 右侧是每个模块对应的测试用例
 
 ![](/images/tc-view-list.png)
 
@@ -19,9 +11,9 @@ Steps:
 
 ---
 
-## Define Test Case Model
+## 实现细节
 
-TestCase Model Class:
+这个功能本身只要一个JAVA类定义就可以完成:
 
 - JPA: Entity/Table
 - Erupt:@Erupt
