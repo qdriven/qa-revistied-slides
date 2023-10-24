@@ -5,42 +5,44 @@
 
 ![](/images/tc-view-list.png)
 
-
 ---
 
-## 测试用例实现分析
+## 测试用例：实现分析
 
 - 实体: TestCase
-- 关联: 产品模块配置Product
-- 数据字典: 配置优先级
-  
----
+- 关联: 产品模块配置: Product
+- 数据字典: 配置优先级: 数字字典表
 
+---
 
 ![](/images/testcase-er.png)
 
 ---
 
-## 数据字典值配置增删改查
+## 数据字典需要实现什么？
+
+- 列表/搜索/新增/编辑/删除
+
+---
+
+![](/images/data-dict.png)
+
+---
+
+## 数据字典值页面实现
 
 **一个JAVA文件完成一个增删改查页面**
 
-![](/images/master-data.png)
+- 启动系统自动建表
+- 表和页面进行对应
 
 ---
 
-## 配置生成页面
+## UI/JAVA 类说明
 
-- 系统管理>菜单管理
-- 添加菜单
+![](/images/UI-Simple.png)
 
 ---
-
-## 实现说明
-
-![](/images/master-data-tags-text.png)
-
---- 
 
 ## 文本类型UI定义
 
@@ -81,25 +83,77 @@
 
 ---
 
+## Boolean 类型
+
+```java
+   @EruptField(
+            views = @View(
+                    title = "是否有效"
+            ),
+            edit = @Edit(
+                    title = "是否有效",
+                    type = EditType.BOOLEAN, search = @Search, notNull = true,
+                    boolType = @BoolType
+            )
+    )
+    private Boolean valid = true;
+
+```
+
+---
+
+## 配置数据字典菜单
+
+- 类型值: 配置为JAVA类名
+- 菜单配置完成
+
+---
+
+## 产品配置模块实现
+
+**产品-模块树形结构UI**
+
+![](/images/product.png)
+
+---
+
 ## 产品模块增删改查实现
 
 难点: 实现一个树形结构
 
 ---
 
-## 产品模块-也是一个文件实现
+## 产品模块树形结构: -也是一个文件实现
+
+- 表/字段生成
+- 页面自动生成
+
+---
 
 ![](/images/product-module.png)
 
 ---
 
-## 现在实现页面再说明
+## UI: Tree树形结构
+
+![](/images/tree-model.png)
+
+---
+
+## 菜单配置
+
+同数据字典表
+
+---
+
+## 测试用例实现
+
+![](/images/test-case-ui.png)
+
+---
 
 
-
-## 实现细节
-
-
+## 代码实例
 
 这个功能本身只要一个JAVA类定义就可以完成:
 
@@ -111,30 +165,29 @@
 @Erupt(name = "测试用例",
         power = @Power(export = true),
         orderBy = "TestCase.updateTime desc",
-        linkTree = @LinkTree(field = "product"))
+        linkTree = @LinkTree(field = "module"))
 @Table(name = "test_cases")
-public class TestCase extends ProductModuleValidFlagVo {
+public class TestCase extends ModuleValidFlagVo {
 
 }
 ```
 
 ---
 
-## Define your fields:  text
 
-```java
 
-    @EruptField(
-            views = @View(
-                    title = "用例ID"
-            )
-    )
-    private String uuid;
-```
+## 测试用例UI实现
+
+![](/images/testcase-tree.png)
 
 ---
 
-## Define your fields:  dropdown or choice
+![](/images/ui-types.png)
+
+
+---
+
+## Choice
 
 ```java
     @EruptField(
@@ -143,33 +196,35 @@ public class TestCase extends ProductModuleValidFlagVo {
             ),
             edit = @Edit(
                     title = "用例优先级",
-                    type = EditType.TAGS,
-                    tagsType = @TagsType(
-                            fetchHandler = SqlTagFetchHandler.class,
-                            fetchHandlerParams = "select distinct priority from  test_cases"
+                    type = EditType.CHOICE,
+                    choiceType = @ChoiceType(
+                            fetchHandler = SqlChoiceFetchHandler.class,
+                            fetchHandlerParams= {"select distinct code " +
+                                    "from master_data where category ='priority' and valid =true"}
                     )
             )
     )
     private String priority = "P2";
 
+
 ```
 
 ---
 
-## Define your fields:  UEDITOR
+## UEDITOR
 
 ```java
     @EruptField(
             views = @View(
-                    title = "测试步骤"
+                    title = "用例前提条件"
             ),
             edit = @Edit(
-                    title = "测试步骤",
+                    title = "用例前提条件",
                     type = EditType.HTML_EDITOR,
                     htmlEditorType = @HtmlEditorType(HtmlEditorType.Type.UEDITOR)
             )
     )
-    private String steps;
+    private String precondition;
 
 ```
 
@@ -210,6 +265,5 @@ DONE!
 
 ## 小结
 
-1. Model 
-2. Field
-3. 菜单配置
+1. 这样子开发有什么好处和不好地方？
+2. 这样子也太没技术含量了吧？。。。。。。
