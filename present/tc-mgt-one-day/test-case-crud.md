@@ -5,13 +5,101 @@
 
 ![](/images/tc-view-list.png)
 
----
-
-![](/images/tc-fields.png)
 
 ---
+
+## 测试用例实现分析
+
+- 实体: TestCase
+- 关联: 产品模块配置Product
+- 数据字典: 配置优先级
+  
+---
+
+
+![](/images/testcase-er.png)
+
+---
+
+## 数据字典值配置增删改查
+
+**一个JAVA文件完成一个增删改查页面**
+
+![](/images/master-data.png)
+
+---
+
+## 配置生成页面
+
+- 系统管理>菜单管理
+- 添加菜单
+
+---
+
+## 实现说明
+
+![](/images/master-data-tags-text.png)
+
+--- 
+
+## 文本类型UI定义
+
+```java
+    @EruptField(
+            views = @View(
+                    title = "代号"
+            ),
+            edit = @Edit(
+                    title = "代号",
+                    type = EditType.INPUT, search = @Search, notNull = true,
+                    inputType = @InputType
+            )
+    )
+    private String code;
+
+```
+
+---
+
+## Tag类型文本定义
+
+```java
+    @EruptField(
+            views = @View(title = "分类"),
+            edit = @Edit(
+                    search = @Search(vague = true),
+                    title = "获取可选种类",
+                    type = EditType.TAGS,
+                    desc = "动态获取可选种类",
+                    tagsType = @TagsType(
+                            fetchHandler = SqlTagFetchHandler.class,
+                            fetchHandlerParams = "select distinct category from master_data where valid=true"
+                    ))
+    )
+    private String category;
+```
+
+---
+
+## 产品模块增删改查实现
+
+难点: 实现一个树形结构
+
+---
+
+## 产品模块-也是一个文件实现
+
+![](/images/product-module.png)
+
+---
+
+## 现在实现页面再说明
+
+
 
 ## 实现细节
+
+
 
 这个功能本身只要一个JAVA类定义就可以完成:
 
